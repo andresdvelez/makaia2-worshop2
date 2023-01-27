@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/andresdvelez/makaia2-worshop2/issues"
   },
-  "homepage": "https://github.com/andresdvelez/makaia2-worshop2#readme"
+  "homepage": "https://github.com/andresdvelez/makaia2-worshop2#readme",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
 }
