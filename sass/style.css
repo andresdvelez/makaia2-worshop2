@@ -49,6 +49,7 @@ body {
   font-size: 14px;
   display: flex;
   margin-right: 5%;
+  position: relative;
 }
 .nav__left-link li:hover {
   color: hsl(0deg, 0%, 8%);
@@ -84,6 +85,35 @@ body {
 .nav__right-register:hover {
   color: hsl(0deg, 0%, 8%);
   cursor: pointer;
+}
+
+.dropdown1, .dropdown2 {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  opacity: 0;
+}
+
+.dropdown2 {
+  width: 130px;
+}
+
+.drop1:is(:hover) .dropdown1, .drop1:is(:hover) .dropdown2 {
+  opacity: 1;
+}
+
+.drop2:is(:hover) .dropdown2 {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

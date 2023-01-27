@@ -57,6 +57,8 @@ $black-color: hsl(0, 0%, 8%);
         font-size: 14px;
         display: flex;
         margin-right: 5%;
+        position: relative;
+
         &:hover {
           color: $black-color;
           cursor: pointer;
@@ -95,4 +97,32 @@ $black-color: hsl(0, 0%, 8%);
       }
     }
   }
+}
+.dropdown1 {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  opacity: 0;
+}
+.dropdown2 {
+  @extend .dropdown1;
+  width: 130px;
+}
+
+.drop1:is(:hover) .dropdown1 {
+  opacity: 1;
+}
+
+.drop2:is(:hover) .dropdown2 {
+  opacity: 1;
 }
