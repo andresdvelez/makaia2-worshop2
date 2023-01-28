@@ -113,6 +113,8 @@ $black-color: hsl(0, 0%, 8%);
   top: 1.5rem;
   left: 0;
   opacity: 0;
+  
+  
 }
 .dropdown2 {
   @extend .dropdown1;
@@ -126,3 +128,7 @@ $black-color: hsl(0, 0%, 8%);
 .drop2:is(:hover) .dropdown2 {
   opacity: 1;
 }
+
+//.main__container--left-btn {
+
+//}
