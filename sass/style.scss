@@ -12,6 +12,10 @@ button {
   cursor: pointer;
 }
 
+ul {
+  list-style: none;
+}
+
 //VARIABLES DE COLORES
 $white-color: hsl(0, 0%, 98%);
 $medium-gray-color: hsl(0, 0%, 41%);
@@ -22,6 +26,21 @@ $black-color: hsl(0, 0%, 8%);
   padding: 0;
   box-sizing: border-box;
   font-family: "Epilogue", sans-serif;
+}
+
+.layover {
+  background-color: hsla(0, 0%, 0%, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+}
+
+.layover.active {
+  opacity: 1;
 }
 
 .nav {
@@ -167,12 +186,25 @@ $black-color: hsl(0, 0%, 8%);
 
       & img {
         height: 1.5rem;
+
+        &:hover {
+          fill: #f4f4f4;
+        }
       }
     }
   }
-  @media (max-width: 375px) {
-    .main__container {
-      display: block;
-    }
+}
+
+/*==========
+  MEDIA QUERIES
+============*/
+
+@media (max-width: 375px) {
+  .nav__left-link {
+    display: none;
+  }
+
+  .nav__right {
+    display: none;
   }
 }

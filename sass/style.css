@@ -9,11 +9,30 @@ button {
   cursor: pointer;
 }
 
+ul {
+  list-style: none;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Epilogue", sans-serif;
+}
+
+.layover {
+  background-color: hsla(0deg, 0%, 0%, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+}
+
+.layover.active {
+  opacity: 1;
 }
 
 .nav {
@@ -154,9 +173,19 @@ button {
 .main__container--left-brands img {
   height: 1.5rem;
 }
+.main__container--left-brands img:hover {
+  fill: #f4f4f4;
+}
+
+/*==========
+  MEDIA QUERIES
+============*/
 @media (max-width: 375px) {
-  .main__container .main__container {
-    display: block;
+  .nav__left-link {
+    display: none;
+  }
+  .nav__right {
+    display: none;
   }
 }
 
