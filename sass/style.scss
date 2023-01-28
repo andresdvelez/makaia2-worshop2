@@ -58,10 +58,6 @@ $black-color: hsl(0, 0%, 8%);
           height: 10px;
           margin-left: 10px;
         }
-        img {
-          width: 100%;
-          height: 100%;
-        }
       }
     }
   }
@@ -103,6 +99,14 @@ $black-color: hsl(0, 0%, 8%);
   top: 1.5rem;
   left: 0;
   opacity: 0;
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    img {
+      width: 16px;
+    }
+  }
 }
 .dropdown2 {
   @extend .dropdown1;
@@ -164,6 +168,11 @@ $black-color: hsl(0, 0%, 8%);
       & img {
         height: 1.5rem;
       }
+    }
+  }
+  @media (max-width: 375px) {
+    .main__container {
+      display: block;
     }
   }
 }
