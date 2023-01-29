@@ -13,6 +13,11 @@ ul {
   list-style: none;
 }
 
+.burger-btn-close {
+  z-index: 999;
+  position: relative;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,14 +30,10 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
-  opacity: 0;
+  display: none;
   height: 100vh;
-  width: 100vw;
-  z-index: 999;
-}
-
-.layover.active {
-  opacity: 1;
+  width: 50vw;
+  z-index: 1;
 }
 
 .nav {
@@ -187,7 +188,17 @@ ul {
 .side__menu {
   background-color: #f4f4f4;
   position: fixed;
-  top: 2rem;
+  top: 0;
+  transition: 250ms ease;
+  transform: translateX(25rem);
+  height: 100vh;
+  width: 50%;
+  padding: 20px;
+  z-index: 4;
+}
+.side__menu.active {
+  transform: translateX(15rem);
+  z-index: 4;
 }
 
 /*==========
