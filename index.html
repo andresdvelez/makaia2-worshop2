@@ -63,19 +63,15 @@
         <img src="./sources/icon-menu.svg" alt="" />
       </button>
       <div class="side__menu">
-        <button class="burger-btn-close">
-          <img
-           src="./sources/icon-close-menu.svg"
-          alt="button"
-        />
-        </button>
+        <div class="close-btn">
+          <button class="burger-btn-close">
+            <img src="./sources/icon-close-menu.svg" alt="button" />
+          </button>
+        </div>
         <ul class="side__menu-menu">
-          <li class="side__menu-menu-link">Features <img src="./sources/icon-arrow-down.svg" alt="icon"<ul class="dropdown2">
-            <li class="dropdown-wrapper">History</li>
-            <li class="dropdown-wrapper">Our Team</li>
-            <li class="dropdown-wrapper">Blog</li>
-          </ul>
-            <ul class="acordeon">
+          <li class="side__menu-menu-item">
+            <button class="accordion-btn">Feautures</button>
+            <ul class="accordion">
               <li class="dropdown1-wrapper">
                 <img src="./sources/icon-todo.svg" alt="icon" />Todo list
               </li>
@@ -86,24 +82,25 @@
                 <img src="./sources/icon-reminders.svg" alt="icon" /> Reminders
               </li>
               <li class="dropdown1-wrapper">
-                <img src="./sources/icon-planning.svg" alt="icon" /> Planning</li>
-              
-
-          
-
+                <img src="./sources/icon-planning.svg" alt="icon" /> Planning
+              </li>
             </ul>
           </li>
-
-          <li class="side__menu-menu-link">Company <img src="./sources/icon-arrow-down.svg" alt="icon">
-            <ul class="acordeon2">
+          <li class="side__menu-menu-item">
+            <button class="accordion-btn">Company</button>
+            <ul class="accordion">
               <li class="dropdown-wrapper">History</li>
               <li class="dropdown-wrapper">Our Team</li>
               <li class="dropdown-wrapper">Blog</li>
             </ul>
           </li>
-          <li class="side__menu-menu-link">Careers</li>
-          <li class="side__menu-menu-link">About</li>
+          <li class="side__menu-menu-item">Careers</li>
+          <li class="side__menu-menu-item">About</li>
         </ul>
+        <div class="side__menu-btnWrapper">
+          <button>Login</button>
+          <button>Register</button>
+        </div>
       </div>
     </nav>
     <!--
@@ -127,8 +124,7 @@
         </div>
       </section>
       <section class="main__right">
-        <figure class="main__right-img">
-        </figure>
+        <figure class="main__right-img"></figure>
       </section>
     </main>
     <script src="./main.js" type="module"></script>
