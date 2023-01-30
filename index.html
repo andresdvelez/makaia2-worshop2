@@ -4,33 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./sass/style.css" />
     <title>workshop-2</title>
   </head>
   <body>
-  <nav class="nav">
+    <div class="layover"></div>
+    <nav class="nav">
       <div class="nav__left">
         <figure class="nav__left-logo">
           <img src="./sources/logo.svg" alt="logo" />
         </figure>
         <ul class="nav__left-link">
-          <li class="nav__left-links">
+          <li class="nav__left-links drop1">
             <a>Feautures </a>
             <figure>
               <img src="./sources/icon-arrow-down.svg" alt="Arrow" />
             </figure>
+            <ul class="dropdown1">
+              <li class="dropdown1-wrapper">
+                <img src="./sources/icon-todo.svg" alt="icon" />Todo list
+              </li>
+              <li class="dropdown1-wrapper">
+                <img src="./sources/icon-calendar.svg" alt="icon" /> Calendar
+              </li>
+              <li class="dropdown1-wrapper">
+                <img src="./sources/icon-reminders.svg" alt="icon" /> Reminders
+              </li>
+              <li class="dropdown1-wrapper">
+                <img src="./sources/icon-planning.svg" alt="icon" /> Planning
+              </li>
+            </ul>
           </li>
-          <li class="navbar-link">
+
+          <li class="navbar-link drop2">
             <a>Company </a>
             <figure>
               <img src="./sources/icon-arrow-down.svg" alt="Arrow" />
             </figure>
+            <ul class="dropdown2">
+              <li class="dropdown-wrapper">History</li>
+              <li class="dropdown-wrapper">Our Team</li>
+              <li class="dropdown-wrapper">Blog</li>
+            </ul>
           </li>
           <li class="navbar-link">
             <a>Careers</a>
@@ -44,19 +59,64 @@
         <p class="nav__right-login">Login</p>
         <p class="nav__right-register">Register</p>
       </div>
+      <button class="burger-btn">
+        <img src="./sources/icon-menu.svg" alt="" />
+      </button>
+      <div class="side__menu">
+        <div class="close-btn">
+          <button class="burger-btn-close">
+            <img src="./sources/icon-close-menu.svg" alt="button" />
+          </button>
+        </div>
+        <ul class="side__menu-menu">
+          <li class="side__menu-menu-item">
+            <button class="accordion-btn">Feautures</button>
+            <ul class="accordion">
+              <li class="dropdown1-wrapper">
+                <img src="./sources/icon-todo.svg" alt="icon" />Todo list
+              </li>
+              <li class="dropdown1-wrapper">
+                <img src="./sources/icon-calendar.svg" alt="icon" /> Calendar
+              </li>
+              <li class="dropdown1-wrapper">
+                <img src="./sources/icon-reminders.svg" alt="icon" /> Reminders
+              </li>
+              <li class="dropdown1-wrapper">
+                <img src="./sources/icon-planning.svg" alt="icon" /> Planning
+              </li>
+            </ul>
+          </li>
+          <li class="side__menu-menu-item">
+            <button class="accordion-btn">Company</button>
+            <ul class="accordion">
+              <li class="dropdown-wrapper">History</li>
+              <li class="dropdown-wrapper">Our Team</li>
+              <li class="dropdown-wrapper">Blog</li>
+            </ul>
+          </li>
+          <li class="side__menu-menu-item">Careers</li>
+          <li class="side__menu-menu-item">About</li>
+        </ul>
+        <div class="side__menu-btnWrapper">
+          <button>Login</button>
+          <button>Register</button>
+        </div>
+      </div>
     </nav>
     <!--
         MAIN
     -->
     <main class="main__container">
-      <section class="main__left">
-        <h1 class="main__left-title">Make <span>remote work</span></h1>
-        <p class="main__left-text">
+      <section class="main__container--left">
+        <h1 class="main__container--left-title">
+          Make <span> remote work</span>
+        </h1>
+        <p class="main__container--left-text">
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
         </p>
-        <button class="main__left-btn">Learn more</button>
-        <div class="main__left-brands">
+        <button class="main__container--left-btn">Learn more</button>
+        <div class="main__container--left-brands">
           <img src="./sources/client-databiz.svg" alt="databiz" />
           <img src="./sources/client-audiophile.svg" alt="audio phile" />
           <img src="./sources/client-meet.svg" alt="meet" />
@@ -64,11 +124,9 @@
         </div>
       </section>
       <section class="main__right">
-        <figure class="main__right-img">
-          <img src="/sources/image-hero-desktop.png" alt="" />
-        </figure>
+        <figure class="main__right-img"></figure>
       </section>
     </main>
-    <script src="main.js" type="module"></script>
+    <script src="./main.js" type="module"></script>
   </body>
 </html>
